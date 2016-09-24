@@ -37,12 +37,11 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="30dp"/>
+            android:layout_marginTop="30dp" />
 
         <Space
             android:layout_width="20dp"
             android:layout_height="match_parent" />
-
 
 
         <LinearLayout
@@ -50,43 +49,49 @@
             android:layout_height="match_parent"
             android:gravity="center"
             android:orientation="vertical">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="25dp"
-                android:orientation="horizontal"
-                android:gravity="center_vertical">
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="sans-serif"
                     android:text="Women"
-                    android:fontFamily="sans-serif"
-                    android:textColor="#000"
-                    android:layout_marginRight="10dp"/>
+                    android:textColor="#000" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="56%"
                     android:fontFamily="sans-serif"
-                    android:textColor="@color/colorPrimaryDark"/>
+                    android:text="56%"
+                    android:textColor="@color/colorPrimaryDark" />
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="25dp"
-                android:orientation="horizontal"
-                android:gravity="center_vertical" i>
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="sans-serif"
                     android:text="Men"
-                    android:fontFamily="sans-serif"
-                    android:textColor="#000"
-                    android:layout_marginRight="10dp"/>
+                    android:textColor="#000" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="44%"
                     android:fontFamily="sans-serif"
-                    android:textColor="#4f4f4f"/>
+                    android:text="44%"
+                    android:textColor="#4f4f4f" />
             </LinearLayout>
         </LinearLayout>
 
@@ -110,6 +115,7 @@
             android:layout_height="wrap_content"
             android:text="Age"
             android:textColor="#000" />
+
         <Space
             android:layout_width="20dp"
             android:layout_height="match_parent" />
@@ -119,12 +125,11 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="30dp"/>
+            android:layout_marginTop="30dp" />
 
         <Space
             android:layout_width="20dp"
             android:layout_height="match_parent" />
-
 
 
         <LinearLayout
@@ -132,81 +137,93 @@
             android:layout_height="match_parent"
             android:gravity="center"
             android:orientation="vertical">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="25dp"
-                android:orientation="horizontal"
-                android:gravity="center_vertical">
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="sans-serif"
                     android:text="10s"
-                    android:fontFamily="sans-serif"
-                    android:textColor="#000"
-                    android:layout_marginRight="10dp"/>
+                    android:textColor="#000" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
                     android:text="42%"
-                    android:fontFamily="sans-serif"
-                    android:textColor="@color/colorPrimaryDark"/>
+                    android:textColor="@color/colorPrimaryDark" />
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="25dp"
-                android:orientation="horizontal"
-                android:gravity="center_vertical" i>
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="sans-serif"
                     android:text="20s"
-                    android:fontFamily="sans-serif"
-                    android:textColor="#000"
-                    android:layout_marginRight="10dp"/>
+                    android:textColor="#000" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
                     android:text="30%"
-                    android:fontFamily="sans-serif"
-                    android:textColor="#4f4f4f"/>
+                    android:textColor="#4f4f4f" />
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="25dp"
-                android:orientation="horizontal"
-                android:gravity="center_vertical">
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="sans-serif"
                     android:text="30s"
-                    android:fontFamily="sans-serif"
-                    android:textColor="#000"
-                    android:layout_marginRight="10dp"/>
+                    android:textColor="#000" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="19%"
                     android:fontFamily="sans-serif"
-                    android:textColor="#4f4f4f"/>
+                    android:text="19%"
+                    android:textColor="#4f4f4f" />
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="25dp"
-                android:orientation="horizontal"
-                android:gravity="center_vertical">
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="sans-serif"
                     android:text="40s"
-                    android:fontFamily="sans-serif"
-                    android:textColor="#000"
-                    android:layout_marginRight="10dp"/>
+                    android:textColor="#000" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="8%"
                     android:fontFamily="sans-serif"
-                    android:textColor="#4f4f4f"/>
+                    android:text="8%"
+                    android:textColor="#4f4f4f" />
             </LinearLayout>
         </LinearLayout>
 
@@ -236,12 +253,11 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_marginLeft="-10dp"
-            android:layout_marginTop="30dp"/>
+            android:layout_marginTop="30dp" />
 
         <Space
             android:layout_width="20dp"
             android:layout_height="match_parent" />
-
 
 
         <LinearLayout
@@ -249,81 +265,93 @@
             android:layout_height="match_parent"
             android:gravity="center"
             android:orientation="vertical">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="25dp"
-                android:orientation="horizontal"
-                android:gravity="center_vertical">
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="sans-serif"
                     android:text="00:00~06:00"
-                    android:fontFamily="sans-serif"
-                    android:textColor="#000"
-                    android:layout_marginRight="10dp"/>
+                    android:textColor="#000" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
                     android:text="8%"
-                    android:fontFamily="sans-serif"
-                    android:textColor="#4f4f4f"/>
+                    android:textColor="#4f4f4f" />
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="25dp"
-                android:orientation="horizontal"
-                android:gravity="center_vertical" i>
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="sans-serif"
                     android:text="06:00~12:00"
-                    android:fontFamily="sans-serif"
-                    android:textColor="#000"
-                    android:layout_marginRight="10dp"/>
+                    android:textColor="#000" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
                     android:text="32%"
-                    android:fontFamily="sans-serif"
-                    android:textColor="#4f4f4f"/>
+                    android:textColor="#4f4f4f" />
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="25dp"
-                android:orientation="horizontal"
-                android:gravity="center_vertical" i>
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="sans-serif"
                     android:text="12:00~18:00"
-                    android:fontFamily="sans-serif"
-                    android:textColor="#000"
-                    android:layout_marginRight="10dp"/>
+                    android:textColor="#000" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="36%"
                     android:fontFamily="sans-serif"
-                    android:textColor="@color/colorPrimaryDark"/>
+                    android:text="36%"
+                    android:textColor="@color/colorPrimaryDark" />
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="25dp"
-                android:orientation="horizontal"
-                android:gravity="center_vertical" i>
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="sans-serif"
                     android:text="18:00~24:00"
-                    android:fontFamily="sans-serif"
-                    android:textColor="#000"
-                    android:layout_marginRight="10dp"/>
+                    android:textColor="#000" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="24%"
                     android:fontFamily="sans-serif"
-                    android:textColor="#4f4f4f"/>
+                    android:text="24%"
+                    android:textColor="#4f4f4f" />
             </LinearLayout>
         </LinearLayout>
 
