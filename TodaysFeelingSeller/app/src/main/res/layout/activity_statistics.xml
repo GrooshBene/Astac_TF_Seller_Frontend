@@ -1,6 +1,334 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="45dp"
+    android:layout_marginRight="45dp"
+    android:layout_marginTop="20dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Statistics"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="@drawable/card_background"
+        android:gravity="top"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:textColor="#000" />
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/mGenderChart"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"/>
+
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="match_parent" />
+
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Women"
+                    android:fontFamily="sans-serif"
+                    android:textColor="#000"
+                    android:layout_marginRight="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="56%"
+                    android:fontFamily="sans-serif"
+                    android:textColor="@color/colorPrimaryDark"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical" i>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Men"
+                    android:fontFamily="sans-serif"
+                    android:textColor="#000"
+                    android:layout_marginRight="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="44%"
+                    android:fontFamily="sans-serif"
+                    android:textColor="#4f4f4f"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="@drawable/card_background"
+        android:gravity="top"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Age"
+            android:textColor="#000" />
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="match_parent" />
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/mAgeChart"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"/>
+
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="match_parent" />
+
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10s"
+                    android:fontFamily="sans-serif"
+                    android:textColor="#000"
+                    android:layout_marginRight="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="42%"
+                    android:fontFamily="sans-serif"
+                    android:textColor="@color/colorPrimaryDark"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical" i>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20s"
+                    android:fontFamily="sans-serif"
+                    android:textColor="#000"
+                    android:layout_marginRight="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="30%"
+                    android:fontFamily="sans-serif"
+                    android:textColor="#4f4f4f"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="30s"
+                    android:fontFamily="sans-serif"
+                    android:textColor="#000"
+                    android:layout_marginRight="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="19%"
+                    android:fontFamily="sans-serif"
+                    android:textColor="#4f4f4f"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="40s"
+                    android:fontFamily="sans-serif"
+                    android:textColor="#000"
+                    android:layout_marginRight="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="8%"
+                    android:fontFamily="sans-serif"
+                    android:textColor="#4f4f4f"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="@drawable/card_background"
+        android:gravity="top"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TimeZone"
+            android:textColor="#000" />
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/mPieChart"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="-10dp"
+            android:layout_marginTop="30dp"/>
+
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="match_parent" />
+
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00:00~06:00"
+                    android:fontFamily="sans-serif"
+                    android:textColor="#000"
+                    android:layout_marginRight="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="8%"
+                    android:fontFamily="sans-serif"
+                    android:textColor="#4f4f4f"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical" i>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="06:00~12:00"
+                    android:fontFamily="sans-serif"
+                    android:textColor="#000"
+                    android:layout_marginRight="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="32%"
+                    android:fontFamily="sans-serif"
+                    android:textColor="#4f4f4f"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical" i>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12:00~18:00"
+                    android:fontFamily="sans-serif"
+                    android:textColor="#000"
+                    android:layout_marginRight="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="36%"
+                    android:fontFamily="sans-serif"
+                    android:textColor="@color/colorPrimaryDark"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical" i>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="18:00~24:00"
+                    android:fontFamily="sans-serif"
+                    android:textColor="#000"
+                    android:layout_marginRight="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="24%"
+                    android:fontFamily="sans-serif"
+                    android:textColor="#4f4f4f"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
 
 </LinearLayout>
