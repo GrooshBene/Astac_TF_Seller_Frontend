@@ -27,6 +27,8 @@ public class MainActivity extends AppCompatActivity {
         mViewPager = (ViewPager)findViewById(R.id.pager);
         setSupportActionBar(toolbar);
 
+
+
         tabLayout = (TabLayout)findViewById(R.id.tab_layout);
         mPagerAdapter = new PagerAdapter(getSupportFragmentManager(), tabLayout.getTabCount());
         mViewPager.setAdapter(mPagerAdapter);
