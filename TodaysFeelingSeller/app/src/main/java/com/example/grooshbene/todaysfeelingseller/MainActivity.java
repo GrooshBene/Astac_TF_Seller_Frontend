@@ -35,13 +35,7 @@ public class MainActivity extends AppCompatActivity {
         mPagerAdapter.addFragment(new InfoActivity());
         mPagerAdapter.addFragment(new StatisticsActivity());
 
-//        mPagerAdapter.addFragment(new fragment_test(1));
-//        mPagerAdapter.addFragment(new fragment_test(2));
-//        mPagerAdapter.addFragment(new fragment_test(3));
-//        mPagerAdapter.addFragment(new fragment_test(4));
-
         mViewPager.setAdapter(mPagerAdapter);
-//        Toast.makeText(MainActivity.this, "setupAdapter", Toast.LENGTH_SHORT).show();
 
         mViewPager.setOffscreenPageLimit(4);
         tabLayout.setupWithViewPager(mViewPager);
