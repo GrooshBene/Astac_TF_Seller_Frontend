@@ -19,6 +19,8 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
 
+import app.akexorcist.bluetotohspp.library.BluetoothSPP;
+
 /**
  * Created by GrooshBene on 2016. 9. 23..
  */
@@ -27,11 +29,54 @@ public class MainActivity extends AppCompatActivity {
     TabLayout tabLayout;
     ViewPager mViewPager;
     PagerAdapter mPagerAdapter;
+    BluetoothSPP bt;
+    String receive;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        bt = new BluetoothSPP(this);
+        if(!bt.isBluetoothAvailable()){
+            Toast.makeText(getApplicationContext(), "블루투스르 켜주세요!", Toast.LENGTH_SHORT).show();
+            finish();
+        }
+
+        bt.setBluetoothConnectionListener(new BluetoothSPP.BluetoothConnectionListener(){
+            @Override
+            public void onDeviceConnected(String name, String address) {
+                Toast.makeText(getApplicationContext(), "오늘의 분위기 박스와 연결되었습니다.",Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onDeviceDisconnected() {
+                Toast.makeText(getApplicationContext(), "오늘의 분위기 박스와의 연결이 끊겼습니다.", Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onDeviceConnectionFailed() {
+
+            }
+        });
+        bt.setAutoConnectionListener(new BluetoothSPP.AutoConnectionListener() {
+            @Override
+            public void onAutoConnectionStarted() {
+
+            }
+
+            @Override
+            public void onNewConnection(String name, String address) {
+
+            }
+        });
+
+        bt.setOnDataReceivedListener(new BluetoothSPP.OnDataReceivedListener() {
+            @Override
+            public void onDataReceived(byte[] data, String message) {
+                receive = message;
+                Log.e("Bluetooth Message", receive);
+            }
+        });
         mViewPager = (ViewPager) findViewById(R.id.pager);
         tabLayout = (TabLayout) findViewById(R.id.tab_layout);
         mPagerAdapter = new PagerAdapter(getSupportFragmentManager());
