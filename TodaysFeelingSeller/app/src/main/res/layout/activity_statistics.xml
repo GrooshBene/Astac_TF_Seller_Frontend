@@ -34,10 +34,10 @@
 
         <com.github.mikephil.charting.charts.PieChart
             android:id="@+id/mGenderChart"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="30dp" />
+            android:layout_marginTop="10dp" />
 
         <Space
             android:layout_width="20dp"
@@ -122,10 +122,10 @@
 
         <com.github.mikephil.charting.charts.PieChart
             android:id="@+id/mAgeChart"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="30dp" />
+            android:layout_marginTop="10dp" />
 
         <Space
             android:layout_width="20dp"
@@ -249,11 +249,11 @@
             android:textColor="#000" />
 
         <com.github.mikephil.charting.charts.PieChart
-            android:id="@+id/mPieChart"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:id="@+id/mTimeZoneChart"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
             android:layout_marginLeft="-10dp"
-            android:layout_marginTop="30dp" />
+            android:layout_marginTop="10dp" />
 
         <Space
             android:layout_width="20dp"
