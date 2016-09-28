@@ -10,7 +10,9 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Statistics"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:text="업소 통계"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="20dp" />
 
@@ -19,6 +21,8 @@
         android:layout_height="15dp" />
 
     <LinearLayout
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
         android:layout_width="match_parent"
         android:layout_height="160dp"
         android:background="@drawable/card_background"
@@ -29,7 +33,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Gender"
+            android:text="성별"
             android:textColor="#000" />
 
         <com.github.mikephil.charting.charts.PieChart
@@ -61,14 +65,14 @@
                     android:layout_height="wrap_content"
                     android:layout_marginRight="10dp"
                     android:fontFamily="sans-serif"
-                    android:text="Women"
+                    android:text="여자"
                     android:textColor="#000" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif"
-                    android:text="56%"
+                    android:text="50%"
                     android:textColor="@color/colorPrimaryDark" />
             </LinearLayout>
 
@@ -83,14 +87,14 @@
                     android:layout_height="wrap_content"
                     android:layout_marginRight="10dp"
                     android:fontFamily="sans-serif"
-                    android:text="Men"
+                    android:text="남자"
                     android:textColor="#000" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif"
-                    android:text="44%"
+                    android:text="50%"
                     android:textColor="#4f4f4f" />
             </LinearLayout>
         </LinearLayout>
@@ -108,12 +112,14 @@
         android:background="@drawable/card_background"
         android:gravity="top"
         android:orientation="horizontal"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
         android:padding="12dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Age"
+            android:text="나이대"
             android:textColor="#000" />
 
         <Space
@@ -149,14 +155,14 @@
                     android:layout_height="wrap_content"
                     android:layout_marginRight="10dp"
                     android:fontFamily="sans-serif"
-                    android:text="10s"
+                    android:text="10대"
                     android:textColor="#000" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif"
-                    android:text="42%"
+                    android:text="25%"
                     android:textColor="@color/colorPrimaryDark" />
             </LinearLayout>
 
@@ -171,14 +177,14 @@
                     android:layout_height="wrap_content"
                     android:layout_marginRight="10dp"
                     android:fontFamily="sans-serif"
-                    android:text="20s"
+                    android:text="20대"
                     android:textColor="#000" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif"
-                    android:text="30%"
+                    android:text="25%"
                     android:textColor="#4f4f4f" />
             </LinearLayout>
 
@@ -193,14 +199,14 @@
                     android:layout_height="wrap_content"
                     android:layout_marginRight="10dp"
                     android:fontFamily="sans-serif"
-                    android:text="30s"
+                    android:text="30대"
                     android:textColor="#000" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif"
-                    android:text="19%"
+                    android:text="25%"
                     android:textColor="#4f4f4f" />
             </LinearLayout>
 
@@ -215,14 +221,14 @@
                     android:layout_height="wrap_content"
                     android:layout_marginRight="10dp"
                     android:fontFamily="sans-serif"
-                    android:text="40s"
+                    android:text="40대"
                     android:textColor="#000" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif"
-                    android:text="8%"
+                    android:text="25%"
                     android:textColor="#4f4f4f" />
             </LinearLayout>
         </LinearLayout>
@@ -240,19 +246,22 @@
         android:background="@drawable/card_background"
         android:gravity="top"
         android:orientation="horizontal"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginBottom="15dp"
         android:padding="12dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TimeZone"
+            android:text="시간대"
             android:textColor="#000" />
 
         <com.github.mikephil.charting.charts.PieChart
             android:id="@+id/mTimeZoneChart"
             android:layout_width="120dp"
             android:layout_height="120dp"
-            android:layout_marginLeft="-10dp"
+            android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp" />
 
         <Space
@@ -284,7 +293,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif"
-                    android:text="8%"
+                    android:text="25%"
                     android:textColor="#4f4f4f" />
             </LinearLayout>
 
@@ -306,7 +315,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif"
-                    android:text="32%"
+                    android:text="25%"
                     android:textColor="#4f4f4f" />
             </LinearLayout>
 
@@ -328,8 +337,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif"
-                    android:text="36%"
-                    android:textColor="@color/colorPrimaryDark" />
+                    android:text="25%"
+                    android:textColor="#4f4f4f" />
             </LinearLayout>
 
             <LinearLayout
@@ -350,7 +359,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif"
-                    android:text="24%"
+                    android:text="25%"
                     android:textColor="#4f4f4f" />
             </LinearLayout>
         </LinearLayout>

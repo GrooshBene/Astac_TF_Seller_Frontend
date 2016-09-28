@@ -8,7 +8,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Place Infomation"
+        android:text="업소 모니터링 정보"
         android:layout_gravity="center"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="20dp" />

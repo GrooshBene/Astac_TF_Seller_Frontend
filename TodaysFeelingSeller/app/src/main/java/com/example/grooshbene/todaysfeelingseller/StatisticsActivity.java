@@ -91,17 +91,19 @@ public class StatisticsActivity extends Fragment {
 
         PieDataSet mGenderSet = new PieDataSet(mGenderEntries,"");
         PieData mGenderData = new PieData(mGenderSet);
+        mGenderSet.setSliceSpace(3f);
         mGenderChart.setData(mGenderData);
         mGenderChart.invalidate();
-        mGenderChart.
 
         PieDataSet mAgeSet = new PieDataSet(mAgeEntries,"");
         PieData mAgeData = new PieData(mAgeSet);
+        mAgeSet.setSliceSpace(3f);
         mAgeChart.setData(mAgeData);
         mAgeChart.invalidate();
 
         PieDataSet mTimeZoneSet = new PieDataSet(mTimeZoneEntries, "");
         PieData mTimeZoneData = new PieData(mTimeZoneSet);
+        mTimeZoneSet.setSliceSpace(3f);
         mTimeZoneChart.setData(mTimeZoneData);
         mTimeZoneChart.invalidate();
 
