@@ -4,6 +4,9 @@
     <stroke
         android:width="2dip"
         android:color="#d5d5d5" />
+    <solid
+        android:color="#fff"
+        />
     <corners
         android:bottomRightRadius="5dip"
         android:bottomLeftRadius="5dip"

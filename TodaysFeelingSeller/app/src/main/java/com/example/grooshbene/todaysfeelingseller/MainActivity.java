@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
         mPagerAdapter.addFragment(new MonitorActivity());
         mPagerAdapter.addFragment(new InfoActivity());
         mPagerAdapter.addFragment(new StatisticsActivity());
+        mPagerAdapter.addFragment(new PlaceInfoActivity());
 
         mViewPager.setAdapter(mPagerAdapter);
 
@@ -47,7 +48,6 @@ public class MainActivity extends AppCompatActivity {
             super(fm);
         }
         public void addFragment(Fragment fragment){
-            Log.d("dudco", "add");
             mFragment.add(fragment);
         }
         @Override
