@@ -32,14 +32,16 @@ public class MainActivity extends AppCompatActivity {
     PagerAdapter mPagerAdapter;
     BluetoothSPP bt;
     String receive;
+    SharedPref pref;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        pref = new SharedPref(getApplicationContext(), "bluetooth");
         bt = new BluetoothSPP(this);
         if(!bt.isBluetoothAvailable()){
-            Toast.makeText(getApplicationContext(), "블루투스르 켜주세요!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), "블루투스를 켜주세요!", Toast.LENGTH_SHORT).show();
             finish();
         }
 
@@ -75,6 +77,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onDataReceived(byte[] data, String message) {
                 receive = message;
+                pref.put("bluetooth_data", message);
                 Log.e("Bluetooth Message", receive);
             }
         });
