@@ -20,6 +20,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import app.akexorcist.bluetotohspp.library.BluetoothSPP;
+import app.akexorcist.bluetotohspp.library.BluetoothState;
 
 /**
  * Created by GrooshBene on 2016. 9. 23..
@@ -118,5 +119,30 @@ public class MainActivity extends AppCompatActivity {
         public CharSequence getPageTitle(int position) {
             return tabTitles[position];
         }
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        bt.stopService();
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        if(!bt.isBluetoothEnabled()){
+            bt.enable();
+        }
+        else{
+            if(!bt.isServiceAvailable()){
+                bt.setupService();
+                bt.startService(BluetoothState.DEVICE_OTHER);
+                setup();
+            }
+        }
+    }
+
+    public void setup() {
+        bt.autoConnect("mood");
     }
 }
