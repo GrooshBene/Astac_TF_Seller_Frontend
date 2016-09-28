@@ -73,6 +73,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif"
                     android:text="50%"
+                    android:textSize="10dp"
                     android:textColor="@color/colorPrimaryDark" />
             </LinearLayout>
 
@@ -95,6 +96,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif"
                     android:text="50%"
+                    android:textSize="10dp"
                     android:textColor="#4f4f4f" />
             </LinearLayout>
         </LinearLayout>
@@ -122,13 +124,10 @@
             android:text="나이대"
             android:textColor="#000" />
 
-        <Space
-            android:layout_width="20dp"
-            android:layout_height="match_parent" />
 
         <com.github.mikephil.charting.charts.PieChart
             android:id="@+id/mAgeChart"
-            android:layout_width="120dp"
+            android:layout_width="100dp"
             android:layout_height="120dp"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp" />
@@ -259,13 +258,12 @@
 
         <com.github.mikephil.charting.charts.PieChart
             android:id="@+id/mTimeZoneChart"
-            android:layout_width="120dp"
+            android:layout_width="80dp"
             android:layout_height="120dp"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp" />
-
         <Space
-            android:layout_width="20dp"
+            android:layout_width="2dp"
             android:layout_height="match_parent" />
 
 
@@ -285,6 +283,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="10dp"
+                    android:textSize="10dp"
                     android:fontFamily="sans-serif"
                     android:text="00:00~06:00"
                     android:textColor="#000" />
@@ -294,6 +293,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif"
                     android:text="25%"
+                    android:textSize="10dp"
                     android:textColor="#4f4f4f" />
             </LinearLayout>
 
@@ -309,6 +309,7 @@
                     android:layout_marginRight="10dp"
                     android:fontFamily="sans-serif"
                     android:text="06:00~12:00"
+                    android:textSize="10dp"
                     android:textColor="#000" />
 
                 <TextView
@@ -316,6 +317,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif"
                     android:text="25%"
+                    android:textSize="10dp"
                     android:textColor="#4f4f4f" />
             </LinearLayout>
 
@@ -331,6 +333,7 @@
                     android:layout_marginRight="10dp"
                     android:fontFamily="sans-serif"
                     android:text="12:00~18:00"
+                    android:textSize="10dp"
                     android:textColor="#000" />
 
                 <TextView
@@ -338,6 +341,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif"
                     android:text="25%"
+                    android:textSize="10dp"
                     android:textColor="#4f4f4f" />
             </LinearLayout>
 
@@ -353,6 +357,7 @@
                     android:layout_marginRight="10dp"
                     android:fontFamily="sans-serif"
                     android:text="18:00~24:00"
+                    android:textSize="10dp"
                     android:textColor="#000" />
 
                 <TextView
@@ -360,6 +365,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif"
                     android:text="25%"
+                    android:textSize="10dp"
                     android:textColor="#4f4f4f" />
             </LinearLayout>
         </LinearLayout>

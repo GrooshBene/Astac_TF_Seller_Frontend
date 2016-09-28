@@ -49,9 +49,9 @@ public class InfoActivity extends Fragment implements View.OnClickListener {
         data = pref.get("bluetooth_data", "");
         dataArr = data.split(",");
         if(!data.equals("")) {
-            mNoiseTv.setText(dataArr[1]);
-            mBrightTv.setText(dataArr[2]);
-            mTempTv.setText(dataArr[3]);
+            mNoiseTv.setText(dataArr[1].toString());
+            mBrightTv.setText(dataArr[2].toString());
+            mTempTv.setText(dataArr[3].toString());
         }
     }
 }
