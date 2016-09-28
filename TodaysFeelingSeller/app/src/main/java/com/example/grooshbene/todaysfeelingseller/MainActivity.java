@@ -49,7 +49,6 @@ public class MainActivity extends AppCompatActivity {
 
     public class PagerAdapter extends FragmentPagerAdapter {
         private final List<Fragment> mFragment = new ArrayList<>();
-        private String title = ["1","2","3"];
         public PagerAdapter(FragmentManager fm) {
             super(fm);
         }
